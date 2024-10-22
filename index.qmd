@@ -46,7 +46,7 @@ After installing the software, open VSC and press `Ctrl+Shift+P` to open the com
 {{< var githubHttps >}}
 ```
 
- and choose a folder where you want to clone the it. Wait for the repository to be cloned.
+and choose a folder where you want to clone the it.
 
 - Confirm that you trust the authors of the repository.
 - Install the recommended extensions.
