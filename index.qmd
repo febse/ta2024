@@ -40,7 +40,7 @@ The recommended way to run the notebooks is to use Google Colab. However, if you
 3. Install Visual Studio Code (VSC) from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 :::
 
-After installing the software, open VSC and press `Ctrl+Shift+P` to open the command palette. Type `Git: Clone` and press `Enter`. Enter the URL of the GitHub repository:
+After installing the software, open VSC and press `Ctrl+Shift+P` to open the command palette. Type `Git: Clone` and press `Enter`. Paste the following URL in the field 
 
 ```bash
 {{< var githubHttps >}}
