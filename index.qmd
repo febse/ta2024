@@ -1,0 +1,79 @@
+# Setup {.unnumbered}
+
+:::{.callout-note}
+## Website URL
+
+[{{< var url >}}]({{< var url >}}){style="font-size:2em; margin-left: 1em;"}
+
+![](./figures/qr_code.png)
+
+:::
+
+## Schedule
+
+1.  Wed 9:30-11:00 in room 520
+2.  Wed 12:15-14:00 in room 215k
+
+## Grading
+
+TBA
+
+## GitHub Repository
+
+All course materials for the exercise classes will be available in the GitHub repository:
+
+[{{< var github >}}]({{< var github >}})
+
+## GitHub Account
+
+Open a GitHub account at <https://github.com/signup>. While you don't need an account to download the course materials, you will need one to receive and submit assignments (this will be explained in details during the exercise classes). You can also apply for the GitHub student benefits at <https://education.github.com/benefits>. If approved you can receive free access to the GitHub Pro plan and to GitHub Copilot, an AI tool that helps you write code.
+
+
+## Google Account
+
+We will be using Python through Jupyter notebooks in the exercise classes. The recommended way to work Google Colab, a cloud service that allows you to run Python code in the browser (and includes a generous free tier). You will need a Google account to use Google Colab. If you don't have one, please register here: <https://accounts.google.com/signup>.
+
+## Local Software Setup (Optional)
+
+The recommended way to run the notebooks is Google Colab. However, if you prefer to work locally, you will need to install a recent version of Python (3.7 or later) and the dependencies listed in the `environment.yml` file in the GitHub repository.
+
+:::{.callout-note collapsed="true"}
+## Windows: Using Installers
+
+1. Install Git for you operating system from [https://git-scm.com/downloads/](https://git-scm.com/downloads). During the installation, leave the default options.
+2. Install `miniconda` from [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). Again, do not change the default options unless you know what you are doing.
+3. Install Visual Studio Code (VSC) from [https://code.visualstudio.com/](https://code.visualstudio.com/). Once more, install with the default options.
+:::
+
+
+:::{.callout-note collapsed=true}
+## Windows: Using Chocolatey
+
+1. Click on the Windows start button and type `cmd`. Right-click on the `Command Prompt` and select `Run as administrator`.
+2. Copy and paste the following command and press enter:
+
+    ```{cmd}
+    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    choco install git vscode miniconda3    
+    ```
+
+This will install Chocolatey, Git, Visual Studio Code, and Miniconda 3.
+
+In case you have any issues, please refer to the [Chocolatey installation instructions](https://chocolatey.org/install).
+:::
+
+After installing the software, you can open a command prompt (you don't need administrative privileges at this point) and run the following command:
+
+```{bash}
+git clone {{< var githubHttps >}} %USERPROFILE%
+```
+
+This will clone the repository to your user profile folder (you can move it to another location afterwards or clone it directly to the desired location by replacing `%userprofile%` with the desired path).
+
+Open VSC and click on `File` -> `Open Folder` and select the folder where you cloned the repository. Wait for
+VSC to load.
+
+- It will ask you whether you trust the authors of the repository. Click on `Trust the authors`.
+- A notification will appear at the bottom right corner of the screen asking you to install the recommended extensions. Click on `Install`.
+- Press `Ctrl+Shift+P` and type `Python: Create Environment`. Select the `.conda` option, then select `Python 3.12` from the dropdown menu. This will create a new folder called `.conda` in the repository folder and will install the Python packages listed in the `environment.yml` file.
+- Open one of the `.ipynb` files in the repository, click on `Select Kernel` button (top right of the notebook window) then choose `Python Environments` from the dropdown and select the `.conda` environment.
