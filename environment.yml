@@ -1,8 +1,8 @@
-name: stat2024
+name: ta2024
 channels:
   - defaults
 dependencies:
-  - python=3.12
+  - python=3.11
   - jupyter
   - matplotlib
   - numpy
@@ -13,5 +13,7 @@ dependencies:
   - yaml
   - qrcode
   - notebook
-  - statsmodels
-prefix: /home/amarov/anaconda3/envs/stat2024
+  - pytorch
+  - tensorflow
+  - keras
+prefix: /home/amarov/anaconda3/envs/ta2024
