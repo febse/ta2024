@@ -1,7 +1,4 @@
 book:
-  chapters:
-    - index.qmd
-    - references.qmd
   chapters: 
     - 01-Introduction.ipynb
     - part: "Count Based Methods"
