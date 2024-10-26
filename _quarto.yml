@@ -6,7 +6,8 @@ book:
   title: "Introduction to Text Analytics 2024"
   author: "Boyko Amarov"
   date: "10/01/2024"
-  chapters: 
+  chapters:
+    - index.qmd
     - 01-Introduction.ipynb
     - part: "Count Based Methods"
       chapters:
