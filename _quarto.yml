@@ -6,7 +6,23 @@ book:
   title: "Introduction to Text Analytics 2024"
   author: "Boyko Amarov"
   date: "10/01/2024"
-
+  chapters: 
+    - 01-Introduction.ipynb
+    - part: "Count Based Methods"
+      chapters:
+      - 01-Intro-Vectorization/01-Vectorization.ipynb
+      - 01-Intro-Vectorization/02-Preprocessing.ipynb
+      - 01-Intro-Vectorization/03-Preprocessing-Exercise.ipynb
+      - 01-Intro-Vectorization/04-TF-IDF.ipynb
+      - 01-Intro-Vectorization/05-Sentiment-Analysis.ipynb
+      - 01-Intro-Vectorization/06-Text-Summarization.ipynb
+    - part: "Introduction to Neural Networks"
+      chapters:
+      - 02-ANN-Introduction/01-Introduction.ipynb
+      - 02-ANN-Introduction/02-Linear-Regression.ipynb
+      - 02-ANN-Introduction/03-Binary-Logistic-Regression.ipynb
+      - 02-ANN-Introduction/04-Multiclass-Logistic-Regression.ipynb
+      - 02-ANN-Introduction/05-Deep-Networks.ipynb
 
 bibliography: references.bib
 

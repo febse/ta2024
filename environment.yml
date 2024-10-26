@@ -2,18 +2,20 @@ name: ta2024
 channels:
   - defaults
 dependencies:
-  - python=3.11
   - jupyter
+  - keras
   - matplotlib
+  - notebook
   - numpy
   - pandas
+  - python=3.11
+  - pytorch
+  - qrcode
   - scikit-learn
   - scipy
   - seaborn
-  - yaml
-  - qrcode
-  - notebook
-  - pytorch
   - tensorflow
-  - keras
+  - yaml
+  - nltk
+  - spacy
 prefix: /home/amarov/anaconda3/envs/ta2024
